@@ -1,0 +1,100 @@
+header {
+	margin-top: 5em;
+	text-align: center;
+}
+footer {
+	background-color: #f2f2f2;
+	font-family: Josefin Sans;
+	font-size: 1.25vw;
+	padding: 1.5em;
+	text-align: center;
+}
+nav {
+	background-color: black;
+}
+nav ul {
+	margin: 0px;
+	padding: 20px;
+	list-style-type: none;
+}
+nav li {
+	display: inline;
+	padding: 0.5em 1.5em 0.5em 1.5em;
+}
+nav li a {
+	color: white;
+	font-size: 1.2em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+h1 {
+	font-family: Open Sans;
+	font-size: 4vw;
+}
+h2 {
+	font-family: Josefin Sans;
+	font-size: 2.5vw;
+}
+p {
+	font-family: Source Sans Pro;
+	font-size: 1.5vw;
+}
+#main {
+	background-color: #f2f2f2;
+}
+#tribute-info {
+	background-color: white;
+	margin: 0 auto;
+	padding: 5vw;
+	width: 85%;
+}
+#image {
+	border: 1px solid black;
+	border-radius: 50%;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	display: block;
+	height: auto;
+	margin: auto;
+	max-width: 20%;
+}
+table {
+	border-spacing: 2.5em;
+}
+td {
+	color: #e5e5e5;
+	font-size: 1.45vw;
+	font-family: Source Sans Pro;
+	padding: 1em;
+}
+td:hover	{
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.td-year {
+	background-color: #e5e5e5;
+	border-radius: 50%;
+	color: #212121;
+	font-size: 1.75em;
+	text-align: center;
+	width: 10%;
+}
+.td-event {
+	background-color: #212121;
+	border-radius: 25px;
+	height: 3em;
+	position: relative;
+	width: 70%;	
+}
+.td-event:after {
+	border: 20px solid transparent;
+	border-right-color: #212121;
+	border-left: 0;
+	border-bottom: 0;
+	content: "";
+	height: 0;
+	left: 0;
+	margin-top: 0px;
+	margin-left: -20px;
+	position: absolute;
+	top: 28%;
+	width: 0;
+}
