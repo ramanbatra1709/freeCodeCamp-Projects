@@ -8,7 +8,93 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<div id="main">
+			<form id="survey-form" action="" method="POST">
+				<h1 id="title">Survey Form</h1>
+				<p id="description">This is a sample survey form. This line could contain a form description like – Please fill out the following survey form. Required fields are followed by <abbr title="required">*</abbr>.<p>
+				<section>
+					<h2>Personal Details</h2>
+					<div id="name-div" class="field">
+						<label id="name-label" for="name" class="left-child">Name: <abbr title="required">*</abbr></label>
+						<input id="name" type="text" name="name" placeholder="Enter your name" required maxlength=50 class="right-child"/>
+					</div>
+					<div id="email-div" class="field">
+						<label id="email-label" for="email" class="left-child">Email ID: <abbr title="required">*</abbr></label>
+						<input id="email" type="email" name="email" placeholder="Enter your email" required maxlength=50  class="right-child"/>
+					</div>
+						<div id="age-div" class="field">
+						<label id="number-label" for="number" class="left-child">Age (in yrs.): <abbr title="required">*</abbr></label>
+						<input id="number" type="number" name="age" placeholder="Enter your age" required min=1 max=200  class="right-child"/>
+					</div>
+					<div class="field">
+						<legend class="left-child">Gender <abbr title="required">*</abbr></legend>
+						<ul id="gender-ul" class="right-child">
+							<li><input id="male" class="gender-li" type="radio" name="gender" value="male" required /><label for="male">Male</label></li>
+							<li><input id="female" class="gender-li" type="radio" name="gender" value="female"><label for="female">Female</label></li>
+							<li><input id="other" class="gender-li" type="radio" name="gender" value="other"><label for="other">Other</label></li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>Product Information</h2>
+					<div class="field">
+						<label for="product" class="left-child">Product(s) purchased<abbr title="required">*</abbr></label>
+						<select multiple id="product" name="product" required class="right-child">
+							<option value="trousers">Trousers</option>
+							<option value="shirt">Shirt</option>
+							<option value="shoes">Shoes</option>
+						</select>
+					</div>
+					<div class="field">
+						<label for="size" class="left-child">Size</label>
+						<select id="dropdown" name="size" class="right-child">
+							<option disabled selected value>Select your size</option>
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+						</select>
+					</div>
+					<div class="field">
+						<label for="purchase-date" class="left-child">Purchase Date</label>
+						<input id="purchase-date" type="date" name="purchase_date" min="2018-01-01" max="2020-01-01" class="right-child"/>
+					</div>
+				</section>
+				<section>
+					<h2>Rating</h2>
+					<div class="field">
+						<label for="service-rating" class="left-child">How would you rate our service?<abbr title="required">*</abbr></label>
+						<div class="service-rating" class="right-child">
+							<input type="radio" id="star-5" name="rating" value="5" required/><label class = "full" for="star-5" title="Awesome"></label>
+							<input type="radio" id="star-4" name="rating" value="4" /><label class = "full" for="star-5" title="Good"></label>
+							<input type="radio" id="star-3" name="rating" value="3" /><label class = "full" for="star-5" title="Average"></label>
+							<input type="radio" id="star-2" name="rating" value="2" /><label class = "full" for="star-5" title="Bad"></label>
+							<input type="radio" id="star-1" name="rating" value="1" /><label class = "full" for="star-5" title="Poor"></label>
+						</div> 
+					</div>
+					<div class="field">
+						<label for="improvements" class="left-child">What would you like us to improve?</label>
+						<ul id="improvements" class="right-child">
+							<li><label><input type="checkbox" id="improvement-1" name="improvement" value="1" />Customer Service</label></li>
+							<li><label><input type="checkbox" id="improvement-2" name="improvement" value="2" />Delivery</label></li>
+							<li><label><input type="checkbox" id="improvement-3" name="improvement" value="3" />Product Quality</label></li>
+						</ul>
+					</div>
+					<div class="field">
+						<label id="comments-label" class="left-child" for="name">Additional comments: </label>
+						<textarea id="comments" class="input-field"  class="right-child" name="comments" placeholder="Enter your comment(s) here..." rows="5" columns="10"></textarea>
+					</div>
+				</section>
+				<section class="field">
+					<div class="left-child button-div">
+						<button id="reset" type="reset">Reset</button>
+					</div>
+					<div class="right-child button-div">
+						<button id="submit" type="submit">Submit</button>
+					</div>
+				</section>
+			</form>
 		<footer>Designed by <a href="http://ramanbatra1709.github.io" target="_blank">Raman Batra</a> | FCC 2018</footer>
+		</div>
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>
