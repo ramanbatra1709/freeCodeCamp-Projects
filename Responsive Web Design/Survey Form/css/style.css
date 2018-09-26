@@ -1,0 +1,128 @@
+#main {
+	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+	padding: 10vmin 15vmin;
+}
+#survey-form  {
+	background-color: white;
+	width: 80%;
+	border-radius : 1em;
+	padding: 5vmin 7.5vmin;
+	margin: 0 auto;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+footer {
+	padding: 5vmin;
+	text-align: center;
+	color: #ddd;
+}
+footer  a {
+	color: white;
+}
+footer a:hover  {
+	color: #fc466b;
+}
+h1, h2  {
+	color: #512DA8;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0.005rem; 
+}
+h1  {
+	text-align: center;
+	font-size: 2rem;
+}
+h2  {
+	font-size: 1.30em;
+}
+p, legend, label, input, textarea, select {
+	color: #212121;
+	font-family: 'Rubik', serif;
+	line-height: 1.5rem;
+	font-size: 1.15rem;
+}
+.field  {
+	display: flex;
+	margin: 1rem auto;
+	width: 70%;
+	align-items: center;
+}
+.left-child, .right-child  {
+	flex: 0 0 50%;
+}
+ul  {
+	list-style: none;
+	padding: 0;
+}
+button {
+    border-radius: 25px;
+    color: white;
+    background-color: #5e3efa;
+    padding: 12px 16px;
+    border: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'Rubik', serif;
+    width: 50%;
+}
+button:hover {
+	animation-name: background-color;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes background-color {
+	100% {
+	background-color: #fc466b;
+	}
+}
+textarea  {
+	width: 100%;
+}
+abbr[title]  {
+	text-decoration: none;
+}
+.service-rating > input { 
+	display: none;
+} 
+.service-rating > label:before { 
+	margin: 5px;
+	font-size: 1.25em;
+	font-family: FontAwesome;
+	display: inline-block;
+	content: "\f005";
+}
+.service-rating > label { 
+	color: #ddd; 
+	float: right; 
+}
+.service-rating > input:checked ~ label, .service-rating:not(:checked) > label:hover, .service-rating:not(:checked) > label:hover ~ label { 
+	color: #FFD700;
+}
+input, select, textarea {
+  border-radius: 10px;
+  padding: 5px;
+  font-szie: 0.75rem;
+}
+input:focus, select:focus, textarea:focus, button:focus {
+	outline: none;
+}
+input[type=radio], input[type=checkbox] {
+	margin-right: 10px;
+}
+.button-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+	.field {
+		flex-direction: column;    
+	}
+	.right-child {
+		display: flex;
+	}
+	button {
+		display: block;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+}
